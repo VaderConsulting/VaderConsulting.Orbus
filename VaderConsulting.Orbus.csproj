@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5D02861-9ED6-478B-B73A-6BFE8DE9A128}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VaderConsulting.Orbus</RootNamespace>
+    <AssemblyName>VaderConsulting.Orbus</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncBridge, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsyncBridge.0.1.1\lib\net40-Client\AsyncBridge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\VaderConsulting.DataLayer.csproj">
+      <Project>{e63fe536-1a80-48ca-a853-68be30aaf768}</Project>
+      <Name>VaderConsulting.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DependencyCollection\VaderConsulting.Dependency.csproj">
+      <Project>{2ed411fe-cdd4-4cff-82f3-cc172e1659aa}</Project>
+      <Name>VaderConsulting.Dependency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VaderConsulting.CommandLine\VaderConsulting.CommandLine.csproj">
+      <Project>{158a8806-c478-4341-922f-c64ab1d00aa7}</Project>
+      <Name>VaderConsulting.CommandLine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VaderConsulting.Database\VaderConsulting.Database.csproj">
+      <Project>{f44f61fd-07f6-42ef-af53-1152cfbcc59f}</Project>
+      <Name>VaderConsulting.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VaderConsulting.Helper\VaderConsulting.Helper.csproj">
+      <Project>{ba53ce7f-858d-46ae-81c9-a88b9a730130}</Project>
+      <Name>VaderConsulting.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VaderConsulting.SystemCenter\VaderConsulting.SystemCenter.csproj">
+      <Project>{12a7d52c-07e8-4ac1-9590-2d547fb90532}</Project>
+      <Name>VaderConsulting.SystemCenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
