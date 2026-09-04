@@ -14,6 +14,10 @@ C# .NET 4.0 class library that loads Orbus iServer SQL drawings, services, serve
 
 Open `VaderConsulting.Orbus.csproj` in Visual Studio 2013 or later (ToolsVersion 12.0). There is no `.sln` in this folder. The project references sibling folders `..\DataLayer\VaderConsulting.DataLayer.csproj`, `..\DependencyCollection\VaderConsulting.Dependency.csproj`, `..\VaderConsulting.CommandLine\VaderConsulting.CommandLine.csproj`, `..\VaderConsulting.Database\VaderConsulting.Database.csproj`, `..\VaderConsulting.Helper\VaderConsulting.Helper.csproj`, and `..\VaderConsulting.SystemCenter\VaderConsulting.SystemCenter.csproj`. `Attribute.cs` is present but not listed in the `.csproj` Compile items.
 
+## Requirements
+
+- Visual Studio 2013 or later, .NET Framework 4.0
+
 ## Attribution and provenance
 
 Working copy from Dave Robinson's OneDrive Historical Dev folder `VaderConsulting.Orbus`. Assembly title/product `VaderConsulting.Orbus`; copyright `Copyright ©  2015`; company empty. Namespace `VaderConsulting.Orbus`. `packages.config` lists AsyncBridge 0.1.1 (referenced by the `.csproj`). `App.config` has leftover Entity Framework 6 LocalDB section.
