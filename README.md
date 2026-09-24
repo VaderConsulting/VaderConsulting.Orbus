@@ -20,7 +20,7 @@ Open `VaderConsulting.Orbus.csproj` in Visual Studio 2013 or later (ToolsVersion
 
 ## Attribution and provenance
 
-Working copy from Dave Robinson's OneDrive Historical Dev folder `VaderConsulting.Orbus`. Assembly title/product `VaderConsulting.Orbus`; copyright `Copyright ©  2015`; company empty. Namespace `VaderConsulting.Orbus`. `packages.config` lists AsyncBridge 0.1.1 (referenced by the `.csproj`). `App.config` has leftover Entity Framework 6 LocalDB section.
+Working copy from my Historical Dev folder `VaderConsulting.Orbus`. Assembly title/product `VaderConsulting.Orbus`; copyright `Copyright ©  2015`; company empty. Namespace `VaderConsulting.Orbus`. `packages.config` lists AsyncBridge 0.1.1 (referenced by the `.csproj`). `App.config` has leftover Entity Framework 6 LocalDB section.
 
 ## License
 
